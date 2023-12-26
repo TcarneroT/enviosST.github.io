@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/HacerEnvios.css">
+    <script src="/JS/Script.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <title>Envíos</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img src="/IMGS/lg-saludtotal.png" alt="">
+        </div> 
+        <div class="header1">
+            <div class="title1">
+                <h1>Memorando salida de equipos Tecnólogicos</h1>
+            </div>
+        </div>
+        <div class="nav">
+            <nav>
+                <div class="container">
+                    <a href="/LoginUsers.html">
+                        <button class="btnLogin">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-door-open" viewBox="0 0 16 16">
+                                <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1"/>
+                                <path d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117zM11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5M4 1.934V15h6V1.077z"/>
+                              </svg>
+                          </button>
+                    </a>
+                </div>
+            </nav>
+
+        </div>
+        
+    </header>
+    <main>
+        <!-- "main" bloque que contiene partes y botones  -->
+        <aside>
+            <div class="menu">
+                <button data-target="#Activo" type="button" class="btn btn-outline-primary" id="btn1" onclick="ocultar();">Activo</button>
+                <button data-target="#Productos" type="button" class="btn btn-outline-primary" id="btn2" onclick="ocultar();">Productos</button>
+                <button data-target="#Contacto" type="button" class="btn btn-outline-primary" id="btn3" onclick="ocultar();">Contacto</button>
+            </div>
+            <div class="submit">
+                <div class="buttonSubmit">
+                    <button type="submit" class="btn btn-outline-success" >Enviar</button> 
+                </div>
+        
+            </div>
+
+        </aside>
+        <section>
+            <div class="content">
+                <div id="textBienvenidad">
+                    <h1 >Seleccione una opción. </h1>
+                </div>
+                
+                <div data-content id="Activo" class="Activo">
+                    <h1>Activo</h1>
+                    <div class="A1">
+
+                        <form action="">
+                            <div class="opcionMovimiento">
+                                <label for="movimiento">Tipo de movimiento:</label>
+                                <select name="movimiento" id="movimiento">
+                                    <option value="seleccioneMovimiento" disabled selected>Seleccione una opción
+                                    </option>
+                                    <option value="prestamo">Préstamo</option>
+                                    <option value="asignacion">Asignación</option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="opcionActivo">
+                                <label for="activo">Tipo de activo:</label>
+                                <select name="activo" id="activo">
+                                    <option value="seleccioneActivo" disabled selected>Seleccione una opción</option>
+                                    <option value="pantalla">Pantalla</option>
+                                    <option value="cpu">CPU</option>
+                                    <option value="portatil">Portátil</option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="opcionPlaca">
+                                <label for="placa">Placa del activo:</label>
+                                <input type="number" name="placa" id="placa" />
+
+                            </div>
+
+                            <div class="opcionMarca">
+                                <label for="marca">Marca del activo:</label>
+                                <input type="text" name="marca" id="marca" />
+
+                            </div>
+
+                            <div class="opcionModelo">
+                                <label for="modelo">Modelo del activo:</label>
+                                <input type="text" name="modelo" id="modelo" />
+
+                            </div>
+
+                            <div class="opcionSerial">
+                                <label for="serial">Serial del activo:</label>
+                                <input type="text" name="serial" id="serial" />
+
+                            </div>
+
+                            <div class="opcionDescripcion">
+                                <label for="descripcion">Descripción del activo:</label>
+                                <textarea name="descripcion" id="descripcion" cols="30" rows="1"></textarea>
+    
+                            </div>
+
+                    </div>
+
+                    
+                    </form>
+                </div>
+
+
+
+
+
+
+
+
+                <div data-content id="Productos">
+                    <h1>Productos</h1>
+                    <p>esto son los productos</p>
+                </div>
+                <div data-content id="Contacto">
+                    <h1>Contacto</h1>
+                    <p>esto son los contactos</p>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    
+
+
+</body>
+
+</html>
